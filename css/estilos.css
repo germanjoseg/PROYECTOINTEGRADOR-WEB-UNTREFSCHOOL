@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #00425a;
+  font-size: 30px;
+  text-align: center;
+  margin: 60px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: #00425a;
+  background: linear-gradient(to right, #00425a99, #00425a99),
+    url(../img/ImagenPrincipal.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+  padding: 30px 50px 0 0;
+}
+
+nav > a {
+  color: #eff5f5;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav > a:hover {
+  color: #fc7300;
+}
+
+header .textos-header {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h1 {
+  font-size: 50px;
+  color: #eff5f5;
+  text-align: center;
+}
+
+.textos-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #eff5f5;
+}
+
+/* Quienes somos */
+
+main .quienes-somos {
+  padding: 50px 50px 50px ;
+}
+.contenedor-quienes-somos {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.imagen-quienes-somos {
+  width: 30%;
+}
+
+.quienes-somos .contenido-textos {
+  width: 80%;
+}
+
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Porque elegirnos */
+
+.porque-elegirnos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.porque-elegirnos .elegir {
+  background: #00425a;
+  display: flex;
+  width: 40%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.porque-elegirnos .elegir img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #eff5f5;
+  border-radius: 50%;
+  display: block;
+}
+
+.porque-elegirnos .elegir > .contenido-texto-elegir {
+  width: 60%;
+  color: #eff5f5;
+}
+
+.porque-elegirnos .elegir > .contenido-texto-elegir p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+/* Propuestas */
+
+.propuestas {
+  background: #ffffff;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*  Noticias */
+
+.ultimas-noticias {
+  background: #eff5f5;
+  padding-bottom: 30px;
+}
+
+.noticias-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noticias-indice {
+  width: 28%;
+  text-align: center;
+}
+
+.noticias-indice h3 {
+  margin: 10px 0;
+}
+
+.noticias-ind p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* footer */
+
+footer {
+  background: #00425a;
+  padding: 60px 0 50px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.content-footer {
+  text-align: center;
+}
+
+.content-footer h4 {
+  color: #eff5f5;
+}
+
+.content-footer p {
+  color: #eff5f5;
+}
+
+.formulario {
+  display: block;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-position: center;
+  }
+
+  /*Quienes somos*/
+  .quienes-somos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quienes-somos .contenido-textos {
+    width: 90%;
+  }
+
+  .imagen-quienes-somos {
+    width: 90%;
+  }
+
+  /* Poruqe Elegirnos */
+
+  .porque-elegirnos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .porque-elegirnos .elegir {
+    width: 90%;
+  }
+
+  .porque-elegirnos .elegir:first-child {
+    margin-bottom: 30px;
+  }
+
+  /* Propuestas */
+
+  .imagen-port {
+    width: 44%;
+  }
+
+  /* Noticias */
+
+  .noticias-contenedor {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .noticias-indice {
+    width: 100%;
+    text-align: center;
+  }
+
+  .noticias-indice:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+
+  nav > a {
+    margin-right: 5px;
+  }
+
+  .textos-header h1 {
+    font-size: 35px;
+  }
+
+  .textos-header h2 {
+    font-size: 20px;
+  }
+
+  /* Quienes somos */
+
+  .imagen-quienes-somos {
+    margin-bottom: 60px;
+    width: 99%;
+  }
+
+  .quienes-somos .contenido-textos {
+    width: 95%;
+  }
+
+  /* Porque Elegirnos */
+
+  .porque-elegirnos .elegir {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .porque-elegirnos .elegir img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Propuestas */
+
+  .imagen-port {
+    width: 95%;
+  }
+
+  /* Footer */
+
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+  }
+
+  .content-footer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .content-footer h4 {
+    border: none;
+  }
+}
